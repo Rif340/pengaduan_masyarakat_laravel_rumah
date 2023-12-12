@@ -10,9 +10,11 @@
 </head>
 
 <body>
+    
+
     <div class="container">
-        <center><h1>Detail masyarakat</h1></center>
-    <table style="margin-top: 2rem;" class="table">
+        <center><h1>Detail Masyarakat</h1></center>
+    <table  style="margin-top: 2rem;" class="table">
         <thead>
           <tr>
             <th scope="col" class="table-warning">nik</th>
@@ -32,7 +34,7 @@
           </tr>
         </tbody>
       </table>
-      <a href="/masyarakat" type="button" class="btn btn-success">Way Back To Home</a>
+      <a href="/masyarakat" type="button" class="btn btn-success">Why Back To Home</a>
     </div>
 </body>
 </html>

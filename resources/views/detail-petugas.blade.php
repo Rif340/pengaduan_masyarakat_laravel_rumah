@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,18 +10,17 @@
 </head>
 
 <body>
-    
-
     <div class="container">
-        <center><h1>Detail petugas</h1></center>
+        <center><h1>Detail Petugas</h1></center>
     <table  style="margin-top: 2rem;" class="table">
         <thead>
           <tr>
-            <th scope="col" class="table-warning">id_petugas</th>
-            <th scope="col" class="table-warning">nama petugas</th>
-            <th scope="col" class="table-warning">username</th>
-            <th scope="col" class="table-warning">password</th>
-            <th scope="col" class="table-warning">telepon</th>
+            <th scope="col" class="table-warning">ID Petugas </th>
+            <th scope="col" class="table-warning">Nama Petugas</th>
+            <th scope="col" class="table-warning">Username</th>
+            <th scope="col" class="table-warning">Password</th>
+            <th scope="col" class="table-warning">Telepon</th>
+            <th scope="col" class="table-warning">Level</th>
           </tr>
         </thead>
         <tbody>
@@ -29,11 +29,12 @@
             <td class="table-secondary">{{$petugas->nama_petugas}}</td>
             <td class="table-secondary">{{$petugas->username}}</td>
             <td class="table-secondary">{{$petugas->password}}</td>
-            <td class="table-secondary">{{$petugas->telepon}}</td>
+            <td class="table-secondary">{{$petugas->telp}}</td>
+            <td class="table-secondary">{{$petugas->level}}</td>
           </tr>
         </tbody>
       </table>
-      <a href="/petugas" type="button" class="btn btn-success">Way Back To Home</a>
+      <a href="/petugas" type="button" class="btn btn-success">Why Back To Home</a>
     </div>
 </body>
 </html>

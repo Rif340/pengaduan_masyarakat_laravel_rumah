@@ -7,25 +7,17 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{{'home'}}">Home</a>
+          <a class="nav-link active" aria-current="page" href="{{'petugas_home'}}">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{'masyarakat'}}">Daftar Masyarakat</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{'petugas'}}">Daftar Petugas</a>
+        </li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2 border-success " list="datalistOptions" type="search" placeholder="Cari Orang Hilang" aria-label="Search">
-        <datalist id="datalistOptions">
-          <option value="Asep">
-          <option value="ucok">
-          <option value="udin">
-          <option value="Budi">
-          <option value="martinah">
-        </datalist>
-        <button class="btn btn-outline-success" type="submit">Cari</button>
-               
       </form>
-      <a href="/logout" class="btn btn-outline-danger" style="margin-left:5px;">logout</a>
+      <a href="petugas_logout" class="btn btn-outline-danger" style="margin-left:5px;">logout</a>
     </div>
   </div>
 </nav>

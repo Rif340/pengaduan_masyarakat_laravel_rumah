@@ -75,21 +75,21 @@
             ">
                         <div class="card-body p-5 shadow-5 text-center">
                             <h2 class="fw-bold mb-5">Daftar Disini</h2>
-                            <form action="{{'register'}}" method="post">
+                            <form action="{{'petugas_register'}}" method="post">
                                 @method('post')
                                 @csrf
                                 <!-- 2 column grid layout with text inputs for the first and last names -->
                                 <div class="row">
                                     <div class="col-md-6 mb-4">
                                         <div class="form-outline">
-                                            <input id="input" type="text" id="form3Example1" class="form-control" name="nik">
-                                            <label class="form-label" for="form3Example1">Masukan Nik :</label>
+                                            <input id="input" type="text" id="form3Example1" class="form-control" name="nama">
+                                            <label class="form-label" for="form3Example1">Masukan Nama Petugas :</label>
                                         </div>
                                     </div>
                                     <div class="col-md-6 mb-4">
                                         <div class="form-outline">
-                                            <input id="input" type="text" id="form3Example2" class="form-control" name="nama">
-                                            <label class="form-label" for="form3Example2">Masukan Nama Lengkap Anda :</label>
+                                            <input id="input" type="text" id="form3Example2" class="form-control" name="username">
+                                            <label class="form-label" for="form3Example2">Masukan Username :</label>
                                         </div>
                                     </div>
                                 </div>
@@ -97,8 +97,11 @@
                                 <div class="row">
                                     <div class="col-md-6 mb-4">
                                         <div class="form-outline">
-                                            <input id="input" type="text" id="form3Example1" class="form-control" name="username">
-                                            <label class="form-label" for="form3Example1">Membuat Username :</label>
+                                            <select class="form-control" name="level" id="cars">
+                                                <option >petugas</option>
+                                                <option >admin</option>
+                                            </select>
+                                            <label class="form-label" for="form3Example1">Pilih Level :</label>
                                         </div>
                                     </div>
                                     <div class="col-md-6 mb-4">

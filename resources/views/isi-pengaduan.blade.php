@@ -1,4 +1,4 @@
-<center><h1>{{$TextJudul}}</h1></center>
+<center><h1>{{$TextJudul}} {{Auth::user()->username}}</h1></center>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,7 +10,7 @@
 <body>
   <main>
     <div class="container pt-4">
-      <form action="isi-pengaduan" method="post" enctype="multipart/form-data">
+    <form action="isi-pengaduan" method="post" enctype="multipart/form-data">
         @method('post')
         @csrf
         <div class="mb-3">

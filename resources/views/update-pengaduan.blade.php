@@ -11,15 +11,15 @@
     <main>
         <center style="margin-top:2rem;"><h1>Selamat Datang Di Update-Pengaduan</h1></center>
         <div class="container pt-4">
-            <form method="post" enctype="multipart/form-data">
+            <form  method="post" enctype="multipart/form-data">
                 @method('post')
                 @csrf
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">perbarui Laporan Disini :</label>
+                    <label for="exampleFormControlTextarea1" class="form-label">Isi Laporan Disini :</label>
 
                     <textarea class="form-control border-primary" id="exampleFormControlTextarea1" rows="3" name="isi_laporan" required>{{$pengaduan->isi_laporan}}</textarea>                 
                 </div>
-                <button type="submit" class="btn btn-success">klik untuk kirim</button>
+                <button type="submit" class="btn btn-success">Success</button>
             </form>
         </div>
     </main>

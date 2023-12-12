@@ -24,25 +24,32 @@
             @csrf
             <div class="mb-3">
 
-              <label for="nama_petugas" class="form-label">masukan nama anda:</label>
-              <input type="text" class="form-control border-primary" id="nama_petugas" rows="3" name="nama_petugas" required></input>@error('nama')
+              <label for="username" class="form-label">masukan nama anda:</label>
+              <input type="text" class="form-control border-primary" id="username" rows="3" name="nama" required></input>@error('nama')
               <div>kalimat harus lebih dari 5 huruf</div>  
               @enderror('nama')<br>
 
-              <label for="username" class="form-label">masukan ussername anda:</label>
+              <label for="username" class="form-label">Buatlah username nya:</label>
               <input type="text" class="form-control border-primary" id="username" rows="3" name="username" required></input>@error('username')
               <div>kalimat harus lebih dari 5 huruf</div>  
               @enderror('username')<br>
 
-              <label for="password" class="form-label">Buatlah password nya:</label>
+              <label for="password" class="form-label">Buatlah passwordnya:</label>
               <input type="password" class="form-control border-primary" id="password" rows="3" name="password" required></input>@error('password')
               <div>kalimat harus lebih dari 5 huruf</div>  
               @enderror('password')<br>
 
+
               <label for="telepon" class="form-label">masukan telepon anda:</label>
-              <input type="number" class="form-control border-primary" id="telepon" rows="3" name="telepon" required></input>@error('telepon')
+              <input type="number" class="form-control border-primary" id="telepon" rows="3" name="telp" required></input>@error('telp')
               <div>kalimat harus lebih dari 5 huruf</div>  
-              @enderror('telepon')<br>
+              @enderror('telp')<br>
+
+              <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="level">
+                <option selected>Pilih Jenis Petugas</option>
+                <option value="2">Admin</option>
+                <option value="3">Petugas</option>
+              </select>
             </div>
             
 
